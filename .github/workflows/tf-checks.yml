@@ -7,19 +7,19 @@ on:
 jobs:
 # Update 'Job name' and 'working_directory' as needed based on the module structure.
   private_pqsql_vnet_integration-example:
-    uses: clouddrove/github-shared-workflows/.github/workflows/tf-checks.yml@v2
+    uses: clouddrove/github-shared-workflows/.github/workflows/smurf-tf-checks.yml@v2
     with:
       working_directory: './examples/private_pqsql_vnet_integration/'
       provider: none
 
   private_pqsql_private_endpoint-example:
-    uses: clouddrove/github-shared-workflows/.github/workflows/tf-checks.yml@v2
+    uses: clouddrove/github-shared-workflows/.github/workflows/smurf-tf-checks.yml@v2
     with:
       working_directory: './examples/private_pqsql_with_private_endpoint/'
       provider: none
 
   public_pqsql_basic-example:
-    uses: clouddrove/github-shared-workflows/.github/workflows/tf-checks.yml@v2
+    uses: clouddrove/github-shared-workflows/.github/workflows/smurf-tf-checks.yml@v2
     with:
       working_directory: './examples/public_pqsql_basic/'
       provider: none
